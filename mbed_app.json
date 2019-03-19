@@ -12,6 +12,14 @@
     "target_overrides": {
         "*": {
             "platform.stdio-convert-newlines": true
-        }
-    }
+        },
+        "LPC55S69": {
+            "target.network-default-interface-type" : "WIFI",
+            "esp8266.tx"                        : "D1",
+            "esp8266.rx"                        : "D0",
+            "esp8266.provide-default"           : true,
+            "drivers.uart-serial-rxbuf-size"    : 1024,
+            "drivers.uart-serial-txbuf-size"    : 1024
+          }
+    }      
 }
